@@ -1,4 +1,3 @@
-#import sys
 import tkinter
 from tkinter import *
 from tkinter.scrolledtext import *
@@ -11,7 +10,7 @@ textPad = ScrolledText(root, width=100, height=80)
 text = Text(root)
 text.grid()
 
-
+# create a menu & define functions for each menu item
 def open_command():
         file = filedialog.askopenfile(parent=root, mode='rb', title='Select a file')
         if file is not None:
